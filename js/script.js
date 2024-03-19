@@ -10,5 +10,16 @@ createApp({
     },
 
     methods:{
+        getApis(){
+            axios.get(this.apiUrl)
+            .then(res => {
+                this.output = res.data.response
+            })
+            .catch(this.output = 'ERRORE!')
+        }
+    },
+
+    mounted(){
+        this.getApis()
     }
 }).mount('#app');
