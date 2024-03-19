@@ -21,7 +21,7 @@
     <div id="app">
 
         <h1>Vue Email List</h1>
-        <ul>
+        <ul v-if="arrayEmails.length === 10">
             <li v-for="email in arrayEmails">{{email}}</li>
         </ul>
 
