@@ -16,4 +16,5 @@ Far comparire gli indirizzi email solamente quando sono stati tutti generati.
 
 ## Svolgimento bonus
 
-1. creo una funzione che verifichi che abbia ricevuto tutte le email, controllando che la lunghezza dell'array sia uguale a 10. Se è vero stampo
+1. creo un contatore
+1. ad ogni chiamata API incremento il contatore, quando sarà uguale a 10 stamperò le email

@@ -16,7 +16,7 @@ createApp({
                 // se la chiamata va a buon fine (status 200)
                 // pusho l'email ricevuta dentro l'array
                 .then(res => {
-                    this.arrayEmails.push(res.data.response);
+                        this.arrayEmails.push(res.data.response);
                 })
                 //se la chiamata non va a buon fine stampo ERRORE!
                 .catch(err => {
