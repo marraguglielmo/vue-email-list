@@ -21,7 +21,9 @@
     <div id="app">
 
         <h1>Vue Email List</h1>
-        <h3>{{output}}</h3>
+        <ul>
+            <li v-for="(mail, index) in 10">{{arrayEmails[index]}}</li>
+        </ul>
 
     </div>
     

@@ -6,7 +6,6 @@ generare 10 indirizzi email e stamparli in pagina all’interno di una lista.
 
 ## Svolgimento
 
-1. Inserisco la proprietà `apiUrl` contenente l'url dal quale prenderò l'API
-2. creo una funzione `getApis()` che effettua la **chiamata API**, restituendomi l'email, o l'errore con esito negativo
-3. con un ciclo richiamo la funzione `getApis()` 10 volte
-4. se la risposta è positiva stampo l'email
+1. Inserisco la proprietà `apiUrl` contenente l' endpoint della chiamata
+2. creo una funzione `getApis()` che effettua un ciclo di **chiamate API**, restituendomi le email, o l'errore con esito negativo
+3. con un `v-for` nel **list items** recupero l'elemento e l'ìndice e stampo l'elemento dell'array in base all'indice
